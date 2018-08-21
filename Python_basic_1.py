@@ -220,6 +220,98 @@ a = 0o117
 b = 0x8ff
 
 
+# In[9]:
+
+
+#연습문제
+sections = ["국어", "영어","수학"]
+scores = [80, 75, 55]
+
+
+for section in sections :
+    print(section)
+    
+print("의 평균은")
+
+sum = 0
+for score in scores :
+    sum = sum+score
+    
+
+print(sum / len(sections))
+
+
+# # 문자형
+
+# In[11]:
+
+
+"a" 'b' """C"""'''D'''
+
+
+# In[27]:
+
+
+print("1. \힝""\\'힝 \n 힝")
+print("""힝
+힝
+""")
+
+
+# In[30]:
+
+
+a = "Python" 
+print(a*2)
+
+
+# In[32]:
+
+
+a = "="
+b = "\n"
+c="Python"  
+print(a*20 +b +c+b+a*20)
+
+
+# In[43]:
+
+
+a = "abcdefg"
+
+print(a[-3])
+print(a[0:-3])
+print(a[:])
+print(a[:1])
+
+
+# In[46]:
+
+
+"I eat %d %s apples." % (5,"five")
+
+
+# In[51]:
+
+
+"I eat {0} apples, {1} cans and {aaa}".format("five", 6, aaa="others")
+
+
+# In[54]:
+
+
+print("{0:>10}".format("hi"))
+print("{0:<10}".format("hi"))
+print("{0:^10}".format("hi"))
+print("{0:=^10}".format("hi"))
+
+
+# In[55]:
+
+
+"test".count("t")
+
+
 # # 불(bool) - 직관적
 
 # In[38]:
