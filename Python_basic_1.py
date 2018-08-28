@@ -312,6 +312,123 @@ print("{0:=^10}".format("hi"))
 "test".count("t")
 
 
+# In[59]:
+
+
+print("Python is the best choice".find('o'))
+print("Python is the best choice".find('z')) #없을떄
+print("Python is the best choice".index('o'))
+print("Python is the best choice".index('z')) #없을떄
+
+
+# In[61]:
+
+
+a=",b"
+a.join('abcd')
+
+
+# In[64]:
+
+
+print(a.upper())
+a.upper().lower()
+
+
+# In[68]:
+
+
+a = "    hi  "
+print(a.rstrip())
+print(a.strip())
+print(a.replace("hi", "hellow"))
+
+
+# In[69]:
+
+
+a = "Life is too short"
+a.split()
+
+
+# In[74]:
+
+
+a = [1, 2, 3, ['a', 'b', 'c']]
+print(a[3])
+print(a[:4])
+print(a*3)
+
+
+# In[75]:
+
+
+del a[0]
+a
+
+
+# In[79]:
+
+
+A = [1,2,3,4]
+A.insert(3,9)
+print(A)
+A.remove(3)
+print(A)
+print(A.pop())  
+
+
+# In[83]:
+
+
+a = [1,2,3]
+a.extend([4,5])
+print(a)
+a += [6,7]
+a
+
+
+# ### 튜플
+
+# In[85]:
+
+
+# 리스트와 유사, 값이 변하지 않음
+t1 =()
+t2= (1, 2,3,)   # 항상 값이 변하지 않음
+del t2[0]   # 오류
+
+
+# ### 딕셔너리
+
+# In[97]:
+
+
+dic = {'name':'pey', 'phone':'0119993323', 'birth': '1118'}
+print("1" , dic.keys())
+print("2" ,dic.values())
+print("3" ,dic.items())
+print("4" ,dic.get("name"))
+print("5" ,dic.get("name222")) #Nome
+print("6" ,dic.clear())
+print("7" ,"name" in dic)
+
+
+# ### 집합자료형
+
+# In[109]:
+
+
+# 중복을 허용하지 않는다. 순서가 없다.  교집합, 합집합, 차집합으로 이용... 왜안되지??
+s1 = set([1, 2])
+print(set1)
+list1 = list(set1)
+print(liset1)
+tuple1 = tuple(liset1)
+print(tuple1)
+# add , update, remove
+
+
 # # 불(bool) - 직관적
 
 # In[38]:
@@ -614,4 +731,63 @@ def multiply(a,b):
 
 
 multiply(2,3)
+
+
+# In[110]:
+
+
+a = input()
+
+
+# In[111]:
+
+
+a
+
+
+# In[112]:
+
+
+number = input("숫자를 입력하세요: ")
+
+
+# In[113]:
+
+
+number
+
+
+# In[114]:
+
+
+print("life" "is" "too short") 
+print("life", "is", "too short")
+
+
+# In[ ]:
+
+
+f = open("새파일.txt", 'w')  # w : 쓰기  , r : 읽기, a :마지막에 새로운내용 추가
+
+
+f.readline()  # \n 포함 리스트
+
+f.read()      # 파일전체를 문자열로 리턴
+
+f.write("추가합니다. ")
+
+f.close()
+
+
+# In[ ]:
+
+
+import sys
+
+
+args = sys.argv[1:]
+
+for i in args:
+
+    print(i)
 
